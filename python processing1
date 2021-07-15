@@ -1,0 +1,23 @@
+name="abdelrhman"
+x=[1,2,3]
+y=(4,5,6)
+z={"ahmed":5,"abdelrhman":10,"norhan":15}
+t=525,545,1
+##
+r=dir(int)
+print(r)
+u=dir(list)
+print(u)
+y=dir(__builtins__)
+print(y)
+print(help(zip))
+i=("mohamed","ahemd","noor")
+print(type(i))
+j=t.index(525)
+print(j)
+o=int(input("enter your password:"))
+if o==5:
+ print("Yes")
+ import random
+ print(random)
+
