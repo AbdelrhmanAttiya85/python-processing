@@ -1,0 +1,46 @@
+""""""
+#function
+""""""
+def mean(*args):
+ 
+ return args
+
+
+
+print(mean((1,2,'a')))
+
+
+
+""""""
+#file processing
+""""""
+
+with open("abdo.txt","w") as writee:
+
+ wr=writee.write("gmal")
+ print(wr)
+#create array
+ old=[2,3,4]
+ newlist=[]
+for printt in old:
+ newlist.append(printt/5)
+ print(newlist)
+""""""""
+#connect with database (mysql)
+""""""""
+import mysql.connector
+con = mysql.connector.connect(
+user = "root",
+password = "",
+host = "localhost",
+database = "python"
+)
+
+cursor = con.cursor()
+
+
+
+query = cursor.execute("SELECT * FROM student ")
+results = cursor.fetchall()
+
+print(results[1])
